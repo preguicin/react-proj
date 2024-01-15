@@ -2,7 +2,7 @@ import SectionHeading from "./SectionHeading";
 
 const About:React.FC = () => {
 	return (
-		<section className="max-w-[45rem] text-center">
+		<section className="max-w-[45rem] text-center scroll-m-10" id="about">
 			<SectionHeading text="Luv(sic)"></SectionHeading>
 
 			<p className="mb-3">

@@ -7,7 +7,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Intro: React.FC = () => {
 	return(
-		<section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+		<section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-m-24" id="home">
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					<motion.div initial={{opacity:0, scale: 0}} animate={{opacity:1, scale:1}} transition={{type:"tween", duration:0.2}}>
@@ -29,15 +29,15 @@ const Intro: React.FC = () => {
 				<a href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
 				 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-90 transition">Contact me<BsArrowRight className="group-hover: translate-x-1 transition"/></a>
 
-				<a href={cv} className="bg-white px-7 py-3 flex items-center gap-2 rounded-full 
+				<a href={cv} className="bg-[#f7f7e5] px-7 py-3 flex items-center gap-2 rounded-full 
 				outline-none focus:scale-110 hover:scale-110 active:scale-90 transition">
 					Dowload CV 
 					<HiDownload className="group-hover:translate-y-1 transition"/>
 				</a>
 
-				<a href="https://linkedin.com" className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-90 transition hover:text-gray-950"><BsLinkedin/></a>
+				<a href="https://linkedin.com" className="bg-[#f7f7e5] p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-90 transition hover:text-gray-950"><BsLinkedin/></a>
 
-				<a href="https://github.com" className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-90 transition hover:text-gray-950"><FaGithubSquare/></a>
+				<a href="https://github.com" className="bg-[#f7f7e5] p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-90 transition hover:text-gray-950"><FaGithubSquare/></a>
 			</motion.div>
 		</section>
 	);
