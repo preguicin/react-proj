@@ -19,7 +19,6 @@ const Observer: React.FC = () => {
             (entries) => {
                 for(const ent of entries){
                     if(ent.isIntersecting){
-                        console.log(setUpSectionName(ent.target.id))
                         setActiveSection(setUpSectionName(ent.target.id));
                     }
                 }
@@ -27,7 +26,7 @@ const Observer: React.FC = () => {
             {
              root: null,
              rootMargin: "0px",
-             threshold: 0.5
+             threshold: 0.25,
             }
         );
 
@@ -45,8 +44,7 @@ const Observer: React.FC = () => {
             }
             observer.disconnect();
         }
-
-    }, [observedRefs, setActiveSection]);
+    }, []);
 
     return ( 
         <>

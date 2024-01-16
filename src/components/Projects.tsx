@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
 	
 	return (
 		<section ref={ projectsRef } className="scroll-m-10" id="projects">
-			<SectionHeading text="My Projects"/>
+			<SectionHeading text="Other music"/>
 			<div>
 				<div>
 					{

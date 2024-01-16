@@ -18,7 +18,7 @@ const Intro: React.FC = () => {
 						<img className="w-24 h-24 rounded-full border-[0.35rem] object-cover shadow-xl" src={photo} alt="Luv(sic)"></img>
 					</motion.div>
 					<motion.div initial={{opacity:0, scale: 0}} animate={{opacity:1, scale:1}} transition={{type:"spring", stiffness: 125, duration:0.5, delay:0.1}}>
-						<span className="absolute bottom-0 right-0 text-4x1">❤️</span>
+						<span className="absolute bottom-0 right-0 text-4x1 select-none">❤️</span>
 					</motion.div>
 				</div>
 			</div>

@@ -33,7 +33,7 @@ const Project:React.FC<ProjectProps> = ({title, description, tags, imageUrl}) =>
 					}
 				</ul>
 			</div>
-			<img src={imageUrl} alt={title} className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:group-even:rotate-12 group-hover:-rotate-12 transition group-hover:translate-y-2 group-hover:scale-[1.03]"></img>
+			<img src={imageUrl} alt={title} className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:group-even:rotate-2 group-hover:-rotate-2 transition group-hover:translate-y-2 group-hover:scale-[1.03]"></img>
 		</motion.section>
 	);
 }
