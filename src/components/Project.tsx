@@ -9,7 +9,7 @@ interface ProjectProps{
 }
 
 const Project:React.FC<ProjectProps> = ({title, description, tags, imageUrl}) => {
-
+	
 	const ref = useRef<HTMLElement>(null);
 
 	const { scrollYProgress } = useScroll({

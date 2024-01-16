@@ -2,10 +2,14 @@ import React from "react";
 import { projectsData } from "../lib/data";
 import SectionHeading from "./SectionHeading";
 import Project from "./Project";
+import { useGlobalContext } from "./GlobalContex";
 
 const Projects: React.FC = () => {
+	
+	const { projectsRef } = useGlobalContext();
+	
 	return (
-		<section className="scroll-m-10" id="projects">
+		<section ref={ projectsRef } className="scroll-m-10" id="projects">
 			<SectionHeading text="My Projects"/>
 			<div>
 				<div>

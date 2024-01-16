@@ -9,6 +9,7 @@ const HomePage:React.FC =  () => {
 			<Intro />
 			<SectionBar/>
 			<About />
+			<SectionBar/>
 			<Projects />
 		</div>
 	);

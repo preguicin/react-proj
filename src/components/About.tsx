@@ -1,8 +1,12 @@
 import SectionHeading from "./SectionHeading";
+import { useGlobalContext } from "./GlobalContex";
 
 const About:React.FC = () => {
+	
+	const { aboutRef } = useGlobalContext();
+	
 	return (
-		<section className="max-w-[45rem] text-center scroll-m-10" id="about">
+		<section ref={ aboutRef } className="max-w-[45rem] text-center scroll-m-10" id="about">
 			<SectionHeading text="Luv(sic)"></SectionHeading>
 
 			<p className="mb-3">

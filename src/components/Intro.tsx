@@ -4,10 +4,14 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import cv from "../public/CV.pdf";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useGlobalContext } from "./GlobalContex";
 
 const Intro: React.FC = () => {
+	
+	const { introRef } = useGlobalContext();
+
 	return(
-		<section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-m-24" id="home">
+		<section ref={introRef} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-m-24" id="home">
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					<motion.div initial={{opacity:0, scale: 0}} animate={{opacity:1, scale:1}} transition={{type:"tween", duration:0.2}}>
