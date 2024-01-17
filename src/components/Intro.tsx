@@ -5,6 +5,7 @@ import cv from "../public/CV.pdf";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useGlobalContext } from "./GlobalContex";
+import TypeWritter from "./TypeWritter";
 
 const Intro: React.FC = () => {
 	
@@ -24,10 +25,10 @@ const Intro: React.FC = () => {
 			</div>
 			<motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl" initial={{opacity:0, y:15}} animate={{opacity:1, y:0}}>
 				'Cause the beat plus the melody
-				Makes me speak of <span> L.O.V.E. </span> eloquently, so evidently
+				Makes me speak of <TypeWritter text="L.O.V.E" speed={125}/> eloquently, so evidently
 				(I mean that from my heart 'cause you make me feel good as a person)
 				'Cause the beat plus the melody
-				Makes me speak of <span> L.O.V.E. </span>. eloquently, so evidently
+				Makes me speak of <TypeWritter text="L.O.V.E" speed={225}/>. eloquently, so evidently
 			</motion.p>
 			<motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{opacity:0, y:15}} animate={{opacity:1, y:0}} transition={{delay:0.2}}>
 				<a href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full

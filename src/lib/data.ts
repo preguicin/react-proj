@@ -1,6 +1,6 @@
-import corpcommentImg from "../public/corpcomment.png";
-import rmtdevImg from "../public/rmtdev.png";
-import wordanalyticsImg from "../public/wordanalytics.png";
+import aruarian_dance from "../public/aruarian.png";
+import samurai_champloo from "../public/samurai_champloo.jpg";
+import metaphorical from "../public/metaphorical.jpg";
 
 export const links = [
   {
@@ -19,24 +19,24 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Departure",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "The music on the album was composed and produced by Nujabes and Fat Jon, included Shing02's opening theme 'BattleCry' and Minmi's ending theme 'Shiki no Uta', and was dominated by soft and low-tempo tracks.",
+    tags: ["Nujabes", "Fat Jon"],
+    imageUrl: aruarian_dance,
   },
   {
-    title: "rmtDev",
+    title: "Impression",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      " All but one track were composed and produced by Fat Jon, Nujabes and Force of Nature. 'Who's Theme' was produced and composed by Minmi and Nujabes.",
+    tags: ["Nujabes", "Force of Nature", "Fat Jon", "MINMI"],
+    imageUrl: samurai_champloo,
   },
   {
-    title: "Word Analytics",
+    title: "Metaphorical Music",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Metaphorical Music is Nujabes' first solo album released in 2003. It offers a combination of hip hop and instrumental jazz, and features artists like Shing02, Substantial, Five Deez and Cise Starr",
+    tags: ["Nujabes"],
+    imageUrl: metaphorical,
   },
 ] as const;

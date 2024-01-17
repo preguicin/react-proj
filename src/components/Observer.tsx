@@ -26,7 +26,7 @@ const Observer: React.FC = () => {
             {
              root: null,
              rootMargin: "0px",
-             threshold: 0.25,
+             threshold: 0.45,
             }
         );
 
@@ -44,7 +44,7 @@ const Observer: React.FC = () => {
             }
             observer.disconnect();
         }
-    }, []);
+    }, [setActiveSection, observedRefs]);
 
     return ( 
         <>
